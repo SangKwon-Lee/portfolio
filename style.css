@@ -618,6 +618,26 @@ button {
 		width: 400px;
 		margin: 20px 0px;
 	}
+
+	.testimonial__face2 {
+		width: 130px;
+		height: 130px;
+		border-radius: 50%;
+		margin-right: 0px;
+	}
+	.testimonial__avatar2 {
+		width: 400px;
+		margin: 20px 0px;
+	}
+
+	.testimonial__speach-bubble2 {
+		font-size: var(--font-micro);
+		padding: 18px;
+		background-color: var(--color-white);
+		border-radius: var(--size-border-radius);
+		height: 100%;
+		flex-wrap: wrap;
+	}
 	.testimonial__box {
 		justify-content: center;
 		text-align: center;
@@ -688,6 +708,17 @@ button {
 	.project {
 		width: 150px;
 		height: 150px;
+	}
+
+	.testimonial__face2 {
+		width: 130px;
+		height: 130px;
+		border-radius: 50%;
+		margin-right: 0px;
+	}
+	.testimonial__avatar2 {
+		width: 300px;
+		margin: 20px 0px;
 	}
 
 	.testimonial__title {
