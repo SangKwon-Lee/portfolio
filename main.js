@@ -17,8 +17,15 @@ navbarMenu.addEventListener("click", (event) => {
 	if (link == null) {
 		return;
 	}
+	navbarMenu.classList.remove("open");
 
 	scrollIntoView(link);
+});
+
+//* Navbar toggle button for small screen
+const navbarToggleBtn = document.querySelector(".navbar__toggle-btn");
+navbarToggleBtn.addEventListener("click", () => {
+	navbarMenu.classList.toggle("open");
 });
 
 //* Handle click on "contact me" button on home
@@ -59,6 +66,13 @@ const projects = document.querySelectorAll(".project");
 
 workBtnContainer.addEventListener("click", (e) => {
 	const filter = e.target.dataset.filter;
+
+	// const active = document.querySelector("category__btn.seleted");
+	// console.log(active);
+	// active.classList.remove("selected");
+	// const target =
+	// 	e.target.nodeName === "BUTTON" ? e.target : e.target.parentNode;
+	// e.target.classList.add("selected");
 
 	projectContainer.classList.add("anim-out");
 	projectContainer2.classList.add("anim-out");
