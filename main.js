@@ -67,12 +67,12 @@ const projects = document.querySelectorAll(".project");
 workBtnContainer.addEventListener("click", (e) => {
 	const filter = e.target.dataset.filter;
 
-	// const active = document.querySelector("category__btn.seleted");
+	const active = document.querySelector(".category__btn.selected");
 	// console.log(active);
-	// active.classList.remove("selected");
-	// const target =
-	// 	e.target.nodeName === "BUTTON" ? e.target : e.target.parentNode;
-	// e.target.classList.add("selected");
+	active.classList.remove("selected");
+	const target =
+		e.target.nodeName === "BUTTON" ? e.target : e.target.parentNode;
+	e.target.classList.add("selected");
 
 	projectContainer.classList.add("anim-out");
 	projectContainer2.classList.add("anim-out");
