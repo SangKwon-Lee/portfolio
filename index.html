@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kogong's Portfolio</title>
+    <script src="main.js" defer></script>
     <meta name="description" content="어제보다 더 내일보다 덜">
     <meta name="author" content="Kogong">
     <link rel="icon" type="image/png" href="./imgs/favicon.png" />
@@ -11,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"/>
-    <script src="main.js" defer></script>
+   
 
 </head>
 <body> 
@@ -23,25 +24,32 @@
     </div>
     <div class="navber__menu">
         <ul class="navbar__menu">
-            <li class="navbar__menu__item">Home</li>
-            <li class="navbar__menu__item">About</li>
-            <li class="navbar__menu__item">Skills</li>
-            <li class="navbar__menu__item">My work</li>
-            <li class="navbar__menu__item">Testimonial</li>
-            <li class="navbar__menu__item">Contact</li>
+            <li class="navbar__menu__item active" data-link="#home">Home</li>
+            <li class="navbar__menu__item" data-link="#about">About</li>
+            <li class="navbar__menu__item" data-link="#skills">Skills</li>
+            <li class="navbar__menu__item" data-link="#work">My work</li>
+            <li class="navbar__menu__item" data-link="#testimonials">Testimonial</li>
+            <li class="navbar__menu__item" data-link="#contact">Contact</li>
         </ul>
     </div>
+
+    <button class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
+    </button>
     </nav>
     <!-- Home -->
     <section id="home" class="section">
+        <div class="section__container">
         <img src="./imgs/Sang.png" alt="kogong"
         class="home__avatar"/>
         <h1 class="home__title">Hello,<br>I'm Kogong</h1>
         <h2 class="home__description">어제보다 더 내일보다 덜</h2>
         <button class="home__contact">Contact Me</button>
+        </div>
     </section>
         <!-- about -->
-    <section id="about" class="section .section__container">
+    <section id="about" class="section">
+        <div class="section__container">
         <h1>About me</h1>
 <p>나에 대한 설명
 </p>
@@ -93,15 +101,15 @@
             </div>
         </div>
 </div>
-
+</div>
     </section>
         <!-- skills -->
     <section id="skills" class="section">
-        <div class="section__conatainer">
+        <div class="section__container">
         <h1>Skills</h1>
         <h2>Skills & Attributes</h2>
         <p>
-            내 기술에 대한 설명
+        내 기술에 대한 설명
         </p>
         <div class="skillset">
             <div class="skillset__left">
@@ -176,6 +184,7 @@
     </section>
         <!-- work -->
     <section id="work" class="section">
+        <div class="section__container">
     <h1>My work</h1>
     <h3>Projects</h3>
     <div class="work__categories">
@@ -195,16 +204,17 @@
             </div>
         </a>
     </div>
+    </div>
     </section>
         <!-- testimonials -->
     <section id="testimonials" class="section">
+        <div class="section__container">
         <h1>Testimonials</h1>
         <h3>See what they say about me</h3>
         <div class="testimonials">
             <div class="testimonial">
-                
                 <div class="testimonial__box">
-                    <div class="testimonial__title">임재현 님</div>
+                    <div class="testimonial__itle">임재현 님</div>
                     <img src="./imgs/임재현.png" alt="kogong" class="testimonial__face" />
                     <img src="./imgs/review1.png" alt="kogong" class ="testimonial__avatar"/>
                     <div class="testimonial__speach-bubble">"블로그도 열심히 하시고, 뭐든지 열심히 하시는 것 같아 좋은 자극을 주셨고 좋은 영향을 주시는 분"</div>
@@ -223,9 +233,11 @@
                 </div>
             </div>
         </div>
+        </div>
     </section>
         <!-- Contact -->
     <section id="contact" class="section">
+        <div class="section__container">
         <h1 class="contact__title">Let' talk</h1>
         <h2 class="contact__email">rnrel13@gmail.com</h2>
         <div class="contact__links">
@@ -236,6 +248,7 @@
         <p class="contact__rights">
             2021 Kogong 
         </p>
+        </div>
     </section>
 </body>
 </html>
