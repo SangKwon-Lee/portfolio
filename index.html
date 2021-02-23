@@ -190,21 +190,35 @@
     <h1>My work</h1>
     <h3>Projects</h3>
     <div class="work__categories">
-        <button class="category__btn">
+        <button class="category__btn active" data-filter="*">
+            All
+        </button>
+        <button class="category__btn" data-filter="project1">
             Front-end-Project1
         </button>
-        <button class="category__btn">
+        <button class="category__btn" data-filter="project2">
             Front-end-Project2
         </button>
     </div>
+    <div class="work__container">
     <div class="work__projects">
-        <a href="https://github.com/codestates/nuga-the-sam-client" class="project" target="blank">
+        <a href="https://github.com/codestates/nuga-the-sam-client" class="project" target="blank" data-type="project1">
             <img src="./imgs/gongja.jpg" alt="Gongja" class="project__img" width=100px>
             <div class="project__description">
                 <h3>Nuga-the-sam</h3>
                 <span>Exception</span>
             </div>
         </a>
+    </div>
+    <div class="work__projects2">
+        <a href="https://github.com/codestates/nuga-the-sam-client" class="project" target="blank" data-type="project2">
+            <img src="./imgs/gongja.jpg" alt="Gongja" class="project__img" width=100px>
+            <div class="project__description">
+                <h3>Nuga-the-sam2</h3>
+                <span>Exception2</span>
+            </div>
+        </a>
+    </div>
     </div>
     </div>
     </section>

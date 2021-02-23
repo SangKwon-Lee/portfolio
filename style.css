@@ -328,22 +328,46 @@ button {
 	opacity: 0;
 	transition: all var(--animation-duration) ease-in;
 }
-
-.work__projects {
+.work__container {
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: center;
 }
 
+.work__projects {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	opacity: 1;
+	transition: all var(--animation-duration) ease-out;
+}
+.work__projects2 {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	opacity: 1;
+	transition: all var(--animation-duration) ease-out;
+}
+.work__projects.anim-out {
+	opacity: 0;
+	transform: scale(0.9) translateY(40px);
+}
+.work__projects2.anim-out {
+	opacity: 0;
+	transform: scale(0.9) translateY(40px);
+}
+
 .project {
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	position: relative;
 	width: 280px;
 	height: 250px;
 	margin: 2px;
 	background-color: var(--color-light-white);
+}
+.project.invisible {
+	display: none;
 }
 
 .project__img {
